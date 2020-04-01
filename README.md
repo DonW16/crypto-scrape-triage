@@ -1,5 +1,5 @@
 # crypto-scrape-triage
-Windows, cryptocurrency triage tool.
+A Windows cryptocurrency triage tool, to help find wallets on windows systems.
 
 ## How does it work?
 
