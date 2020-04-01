@@ -62,7 +62,7 @@ class Ui_UserInput(object):
         fetch_wallets_win(self.TextExaminer.text(), self.TextCase.text(), self.TextExhibit.text(), self.TextDescription.text())
         msg = QtWidgets.QMessageBox()
         msg.setIcon(QtWidgets.QMessageBox.Information)
-        msg.setText("System scan complete! Copied all potential wallet files to %s %s %s %s case folder! In order to decrypt wallets you must load this case file onto the crypto scrape server." % (self.TextExaminer.text(), self.TextCase.text(), self.TextExhibit.text(), self.TextDescription.text()))
+        msg.setText("System scan complete! Copied all potential wallet files to %s %s %s %s case folder!" % (self.TextExaminer.text(), self.TextCase.text(), self.TextExhibit.text(), self.TextDescription.text()))
         msg.setWindowTitle("System scan complete!")
         msg.setStandardButtons(QtWidgets.QMessageBox.Ok)
         retval = msg.exec_()
