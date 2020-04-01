@@ -55,13 +55,6 @@ blacklisted_filenames = {
     '',
 }
 
-crypto_address = {
-    'bitcoin': rb'[13][a-km-zA-HJ-NP-Z0-9]{26,33}',
-    'litecoin': rb'[LM3][a-km-zA-HJ-NP-Z1-9]{26,33}',
-    'monero': rb'4([0-9]|[A-B])(.){93}',
-    'dodge': rb'D{1}[5-9A-HJ-NP-U]{1}[1-9A-HJ-NP-Za-km-z]{32}'
-}
-
 default_wallet_names = [
     r'default_wallet\w+',
     r'wallet_\d+',
@@ -127,8 +120,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
             except shutil.Error:
                 print('Please run crypto scrape, as admin!')
         else:
-            pass
-            #print("%s : Electrum not installed for user %s!" % (current_time, user))
+            print("%s : Electrum not installed for user %s!" % (current_time, user))
 
         if (default_electrum_test_dir == True):
             current_time = datetime.datetime.now()
@@ -138,8 +130,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
             except shutil.Error:
                 print('Please run crypto scrape, as admin!')
         else:
-            pass
-            #print("%s : Electrum not installed for user %s!" % (current_time, user))
+            print("%s : Electrum not installed for user %s!" % (current_time, user))
 
         if (default_bitcoin_core_dir == True):
             current_time = datetime.datetime.now()
@@ -149,8 +140,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
             except shutil.Error:
                 print('Please run crypto scrape, as admin!')
         else:
-            pass
-            #print("%s : Bitcoin core not installed for user %s!" % (current_time, user))
+            print("%s : Bitcoin core not installed for user %s!" % (current_time, user))
 
         if (default_bitcoin_core_test_dir == True):
             current_time = datetime.datetime.now()
@@ -161,8 +151,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
                 print('Please run crypto scrape, as admin!')
                 break
         else:
-            pass
-            #print("%s : Bitcoin (Testnet) core not installed for user %s!" % (current_time, user))
+            print("%s : Bitcoin (Testnet) core not installed for user %s!" % (current_time, user))
 
         if (default_monero_dir == True):
             current_time = datetime.datetime.now()
@@ -173,8 +162,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
                 print('Please run crypto scrape, as admin!')
                 break
         else:
-            pass
-            #print("%s : Monero core not installed for user %s!" % (current_time, user))
+            print("%s : Monero core not installed for user %s!" % (current_time, user))
 
         if (default_litecoin_dir == True):
             current_time = datetime.datetime.now()
@@ -185,8 +173,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
                 print('Please run crypto scrape, as admin!')
                 break
         else:
-            pass
-            #print("%s : Litecoin is not installed for user %s!" % (current_time, user))
+            print("%s : Litecoin is not installed for user %s!" % (current_time, user))
 
     # http://code.activestate.com/recipes/580737-get-disk-partition-information-with-psutil-cross-p/
     # Scans and searches common document files for addresses.
