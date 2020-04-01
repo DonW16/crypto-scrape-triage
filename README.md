@@ -1,9 +1,14 @@
-# crypto-scrape-triage
+# crypto-scrape-triage v1.0
 A Windows cryptocurrency triage tool, to help find wallets and seeds on windows systems and copies them onto the removable media you're running ```crypto-scrape-triage.exe``` from.
-
 
 ## Downloads
 For binaries
+
+## How to use?
+1. Copy ```crypto-scrape-triage.exe``` to your Triage USB.
+2. Run ```crypto-scrape-triage.exe``` as Administrator on the system you want to scan.
+3. Fill in the forms and click scan.
+4. Check the ```cases``` folder for ```wallets``` and ```potential``` wallets.
 
 ## How does it work?
 There are two scan modes within this triage tool, ```quick``` and ```full```.
