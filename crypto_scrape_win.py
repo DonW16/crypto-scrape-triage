@@ -120,6 +120,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
             except shutil.Error:
                 print('Please run crypto scrape, as admin!')
         else:
+            current_time = datetime.datetime.now()
             print("%s : Electrum not installed for user %s!" % (current_time, user))
 
         if (default_electrum_test_dir == True):
@@ -130,6 +131,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
             except shutil.Error:
                 print('Please run crypto scrape, as admin!')
         else:
+            current_time = datetime.datetime.now()
             print("%s : Electrum not installed for user %s!" % (current_time, user))
 
         if (default_bitcoin_core_dir == True):
@@ -140,6 +142,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
             except shutil.Error:
                 print('Please run crypto scrape, as admin!')
         else:
+            current_time = datetime.datetime.now()
             print("%s : Bitcoin core not installed for user %s!" % (current_time, user))
 
         if (default_bitcoin_core_test_dir == True):
@@ -151,6 +154,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
                 print('Please run crypto scrape, as admin!')
                 break
         else:
+            current_time = datetime.datetime.now()
             print("%s : Bitcoin (Testnet) core not installed for user %s!" % (current_time, user))
 
         if (default_monero_dir == True):
@@ -162,6 +166,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
                 print('Please run crypto scrape, as admin!')
                 break
         else:
+            current_time = datetime.datetime.now()
             print("%s : Monero core not installed for user %s!" % (current_time, user))
 
         if (default_litecoin_dir == True):
@@ -173,6 +178,7 @@ def fetch_wallets_win(examiner_name, case_ref, exhibit_ref, description):
                 print('Please run crypto scrape, as admin!')
                 break
         else:
+            current_time = datetime.datetime.now()
             print("%s : Litecoin is not installed for user %s!" % (current_time, user))
 
     # http://code.activestate.com/recipes/580737-get-disk-partition-information-with-psutil-cross-p/
