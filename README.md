@@ -1,4 +1,4 @@
-# Crypto-scrape-triage
+# crypto-scrape-triage
 Windows, cryptocurrency triage tool.
 
 ## How does it work?
