@@ -190,7 +190,7 @@ class Ui_UserInput(object):
 
     def retranslateUi(self, UserInput):
         _translate = QtCore.QCoreApplication.translate
-        UserInput.setWindowTitle(_translate("UserInput", "Crypto scrape Triage"))
+        UserInput.setWindowTitle(_translate("UserInput", "Crypto scrape Triage v1.0"))
         self.LabelExaminer.setText(_translate("UserInput", "Examiner name:"))
         self.LabelCase.setText(_translate("UserInput", "Case reference:"))
         self.LabelCase_2.setText(_translate("UserInput", "Exhibit reference:"))
